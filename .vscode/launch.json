@@ -1,0 +1,11 @@
+{
+    "configurations": [
+        {
+            "type": "java",
+            "name": "CodeLens (Launch) - RecomendaProdutos",
+            "request": "launch",
+            "mainClass": "br.com.alura.RecomendaProdutos",
+            "projectName": "recomendador"
+        }
+    ]
+}
