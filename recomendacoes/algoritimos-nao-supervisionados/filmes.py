@@ -1,9 +1,10 @@
 import pandas as pd
-# import seaborn as sns
+import seaborn as sns
 from sklearn.preprocessing import StandardScaler
 from sklearn.cluster import KMeans, AgglomerativeClustering
 # from sklearn.manifold import TSNE
 from scipy.cluster.hierarchy import dendrogram, linkage
+import matplotlib.pyplot as plt
 
 pd.set_option('display.max_columns', 520)
 pd.set_option('display.width', 1000)
@@ -49,4 +50,5 @@ grupos = pd.DataFrame(modelo.cluster_centers_, columns=generos.columns)
 
 matriz_de_distancia = linkage(grupos)
 dendrograma = dendrogram(matriz_de_distancia) 
-print(dendrograma)
+
+plt.show()
